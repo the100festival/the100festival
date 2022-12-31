@@ -503,8 +503,48 @@ p {
     border-color: transparent;
 }
 
-#googleMaps{
-    border-radius: 20px !important;
+#map {
+  border-radius: 20px !important;
+  height: 450px; 
+  width: 100%;
+}
+
+/* ================== footer section ================== */
+.site-footer{
+  background: #000;
+  overflow: hidden;
+  position: relative;
+  padding-bottom: 2rem;
+}
+
+.site-footer-top{
+  background: #ee5007;
+  margin-bottom: 70px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.social-icon{
+  margin: 0;
+  padding: 0;
+}
+
+.site-footer-title{
+  color: #f8cb2e;
+}
+.site-footer-links{
+  padding-left: 0;
+}
+.site-footer-link-item{
+  margin-right: 15px;
+  display: inline-block;
+}
+.site-footer-link, .copyright-text{
+  color: #f0f8ff;
+}
+
+.site-footer-link:hover{
+  color: #f8cb2e;
 }
 
 /* ================== for small screens ================== */

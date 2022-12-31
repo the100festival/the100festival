@@ -32,10 +32,19 @@ function scrollActive() {
 window.addEventListener("scroll", scrollActive);
 
 // ===================== google maps js =======================
-function myMap() {
-    var mapProp = {
-      center: new google.maps.LatLng(37.830047, 30.527091),
-      zoom: 14,
-    };
-    var map = new google.maps.Map(document.getElementById("googleMaps"), mapProp); 
-  }
+function initMap() {
+  var uluru = {
+    lat: 37.830047,
+    lng: 30.527091
+  };
+  var map = new google.maps.Map(document.getElementById('map'), {
+    zoom: 14,
+    center: uluru
+  });
+  var marker = new google.maps.Marker({
+    position: uluru,
+    map: map
+  });
+
+}
+google.maps.event.addDomListener(window, "load", initMap);
