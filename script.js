@@ -8,43 +8,30 @@ window.addEventListener("scroll", () => {
   }
 });
 
-const sections = document.querySelectorAll("section[id]");
+const currentLocation = location.href;
+const menuItem = document.querySelectorAll(".nav-link");
+const menuLength = menuItem.length;
 
-function scrollActive() {
-  const scrollY = window.pageYOffset;
-
-  sections.forEach((current) => {
-    const sectionHeight = current.offsetHeight,
-      sectionTop = current.offsetTop - 58,
-      sectionId = current.getAttribute("id");
-
-    if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
-      document
-        .querySelector(".navbar-collapse a[href*=" + sectionId + "]")
-        .classList.add("active-link");
-    } else {
-      document
-        .querySelector(".navbar-collapse a[href*=" + sectionId + "]")
-        .classList.remove("active-link");
-    }
-  });
+for (let i = 0; i < menuLength; i++) {
+  if (menuItem[i].href === currentLocation) {
+    menuItem[i].classList.add("active-link");
+  }
 }
-window.addEventListener("scroll", scrollActive);
+
 
 // ===================== google maps js =======================
 function initMap() {
   var uluru = {
     lat: 37.830047,
-    lng: 30.527091
+    lng: 30.527091,
   };
-  var map = new google.maps.Map(document.getElementById('map'), {
+  var map = new google.maps.Map(document.getElementById("map"), {
     zoom: 14,
-    center: uluru
+    center: uluru,
   });
   var marker = new google.maps.Marker({
     position: uluru,
-    map: map
+    map: map,
   });
-
 }
 google.maps.event.addDomListener(window, "load", initMap);
