@@ -630,6 +630,77 @@ p {
   padding-left: 35px;
 }
 
+/* ================== festival section ================== */
+.festival {
+  background: #f0f8ff;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.festival strong {
+  color: #ee5007;
+}
+
+.festival-wrap {
+  position: relative;
+}
+.festival-wrap img {
+  border-radius: 50px !important;
+}
+.festival-wrap .festival-info {
+  position: absolute;
+  bottom: 2rem;
+  left: 2rem;
+  right: 2rem;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(5px) saturate(180%);
+  width: 90%;
+  border-radius: 50px;
+}
+
+.festival-info {
+  text-align: justify;
+  padding-left: 3rem;
+}
+.festival-wrap .festival-info small {
+  font-weight: 700;
+  color: #909090;
+  position: relative;
+  top: 2px;
+}
+.festival-info a {
+  color: #0c8195 !important;
+}
+
+.festival-info .festival-icon {
+  background: #0c8195;
+  position: absolute;
+  right: 30px;
+  top: 30px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  color: #fff;
+  line-height: 40px;
+  text-align: center;
+  padding-left: 5px;
+  font-size: 2rem;
+  transition: all 0.3s ease;
+}
+.festival-info .festival-icon:hover {
+  transform: rotate(90deg) !important;
+}
+
+.carousel-indicators {
+  bottom: -13% !important;
+}
+.carousel-indicators .active {
+  background-color: #0c8195 !important;
+}
+.festival-indicator {
+  width: 50px !important;
+  height: 3px !important;
+}
 
 /* ================== footer section ================== */
 .site-footer {
