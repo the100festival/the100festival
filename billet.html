@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="tr">
+<html lang="fr">
   <head>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-WWT1QQMFPK"></script>
@@ -30,12 +30,25 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header id="nav-header">
-      <nav class="navbar navbar-expand-lg navbar-dark text-light fixed-top tavkim-nav">
+    <div class="announcement">
         <div class="container">
-          <a href="./index.html" class="navbar-brand">Festival İsmi</a>
+            <div class="row">
+                <div class="col-12 d-flex flex-wrap">
+                    <p class="d-flex me-4 mb-0 align-items-center">
+                        <i class="ri-user-3-line custom-icon me-2"></i>
+                        <strong class="text-dark">%50 indirim için şimdi bilet alınız !!</strong>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <header id="nav-header">
+      <nav class="navbar index-nav navbar-expand-lg navbar-dark text-light fixed-top">
+        <div class="container">
+          <a href="./index.html" class="navbar-brand">The 100 Festival</a>
           <a href="bilet.html" class="btn custom-btn ms-auto me-4 d-lg-none"
-            >Bilet Alın</a
+            >Confirmer son billet</a
           >
           <button
             class="navbar-toggler collapsed"
@@ -52,106 +65,96 @@
           <div class="navbar-collapse collapse" id="navbarNav">
             <ul class="navbar-nav align-items-lg-center ms-auto me-lg-5">
               <li class="nav-item">
-                <a href="index.html" class="nav-link">Anasayfa</a>
+                <a href="index.html" class="nav-link">Accueil</a>
               </li>
               <li class="nav-item">
-                <a href="takvim.html" class="nav-link">Takvim</a>
+                <a href="prog.html" class="nav-link">Programmation</a>
               </li>
               <li class="nav-item">
-                <a href="fiyatlar.html" class="nav-link">Fiyatları</a>
+                <a href="artists.html" class="nav-link">Artistes</a>
               </li>
               <li class="nav-item">
-                <a href="contact.html" class="nav-link">İletişim</a>
+                <a href="contact.html" class="nav-link">Lieu</a>
               </li>
             </ul>
+            
             <a
-              href="bilet.html"
+              href="billet.html"
               class="btn custom-btn ms-auto me-4 d-lg-block d-none"
-              >Bilet Alın</a
+              >Confirmer son billet</a
             >
           </div>
         </div>
       </nav>
     </header>
 
+    
     <main>
-        <section class="takvim-section" id="takvim">
+        <section class="bilet-section">
+            <div class="section-overlay"></div>
             <div class="container">
                 <div class="row">
-                    <div class="col-12 text-center">
-                        <h2 class="mb-4 text-white">Etkinlik Programı</h2>
-                        <div class="table-responsive">
-                            <table class="takvim-table table table-dark">
-                                <thead>
-                                    <tr>
-                                        <th scope="col">Tarih</th>
-                                        <th scope="col">Çarşamba</th>
-                                        <th scope="col">Perşembe</th>
-                                        <th scope="col">Cuma</th>
-                                    </tr>
-                                </thead>
-                                
+                    <div class="col-10 col-lg-6 mx-auto">
+                        <form action="#" role="form" method="post" class="custom-form bilet-form mb-5 mb-lg-0">
+                            <h2 class="text-center mb-4">buradan Başlayabilirsiniz!!</h2>
+                            <div class="bilet-form-body">
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6 col-12">
+                                        <input type="text" name="bilet-form-name" id="bilet-form-name" class="form-control" placeholder="Ad Soyad" required="">
+                                    </div>
 
-                                <tr>
-                                    <th scope="row">1 Gün</th>
-                                    <td class="table-background-img pop-img">
-                                        <h3>Pop Gece</h3>
-                                        <p class="mb-2">5:00 - 7:00 PM</p>
-                                        <p>By Adele</p>
-                                        <div class="section-overlay"></div>
-                                    </td>
-                                    <td class="no-tavkim-content"></td>
-                                    <td class="table-background-img rock-img">
-                                        <h3>Rock & Roll</h3>
-                                        <p class="mb-2">7:00 - 11:00 PM</p>
-                                        <p>By Fadwa</p>
-                                        <div class="section-overlay"></div>
-                                    </td>
-                                </tr>
+                                    <div class="col-lg-6 col-md-6 col-12">
+                                        <input type="email" name="bilet-form-email" id="bilet-form-email" pattern="[^ @]*@[^ @]*" class="form-control" placeholder="Eposta adresi" required="">
+                                    </div>
+                                </div>
 
-                                <tr>
-                                    <th scope="row">2 Gün</th>
-                                    <td class="no-tavkim-content"></td>
-                                    <td class="table-background-img dj-img">
-                                        <h3>DJ Night</h3>
-                                        <p class="mb-2">6:30 - 9:30 PM</p>
-                                        <p>By DJ Faker</p>
-                                        <div class="section-overlay"></div>
-                                    </td>
-                                    <td class="no-tavkim-content"></td>
-                                </tr>
+                                <input type="tel" class="form-control" name="bilet-form-phone" placeholder="Tr 055-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required="">
 
-                                <tr>
-                                    <th scope="row">3 Gün</th>
-                                    <td class="table-background-img country-img">
-                                        <h3>Country Music</h3>
-                                        <p class="mb-2">4:30 - 7:30 PM</p>
-                                        <p>By Majid</p>
-                                        <div class="section-overlay"></div>
-                                    </td>
-                                    <td class="no-tavkim-content"></td>
-                                    <td class="table-background-img free-img">
-                                        <h3>Free Styles</h3>
-                                        <p class="mb-2">6:00 - 10:00 PM</p>
-                                        <p>By Members</p>
-                                        <div class="section-overlay"></div>
-                                    </td>
-                                </tr>
+                                <h6>Bilet Türünü Seçin</h6>
 
-                            </table>
-                        </div>
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6 col-12">
+                                        <div class="form-check form-control">
+                                            <input class="form-check-input" type="radio" name="biletForm" id="flexRadioDefault1">
+                                            <label class="form-check-label" for="flexRadioDefault1">
+                                                Eary bird $120
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-6 col-md-6 col-12">
+                                        <div class="form-check form-check-radio form-control">
+                                            <input class="form-check-input" type="radio" name="biletForm" id="flexRadioDefault2">
+                                            <label class="form-check-label" for="flexRadioDefault2">
+                                                Standard $240
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <input type="number" name="bilet-form-number" id="bilet-form-number" class="form-control" placeholder="bilet sayısı" required="">
+
+                                <textarea name="bilet-form-message" rows="3" class="form-control" id="bilet-form-message" placeholder="Ek talepler"></textarea>
+
+                                <div class="col-lg-4 col-md-10 col-8 mx-auto">
+                                    <button type="submit" class="form-control">bilet alınız</button>
+                                </div>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
         </section>
     </main>
 
+    
+    
     <footer class="site-footer">
       <div class="site-footer-top">
         <div class="container">
           <div class="row">
             <div class="col-12 col-lg-6">
-              <h2 class="mb-lg-0 text-white">Festival İsmi</h2>
+              <h2 class="mb-lg-0 text-white">The 100 Festival</h2>
             </div>
             <div
               class="col-12 col-lg-6 d-flex justify-content-lg-end align-items-center"
@@ -191,44 +194,37 @@
       <div class="container">
         <div class="row">
           <div class="col-12 col-lg-6 mb-4 pb-2">
-            <h5 class="site-footer-title mb-3">Bağlantılar</h5>
+            <h5 class="site-footer-title mb-3">Plan du site</h5>
             <ul class="site-footer-links">
               <li class="site-footer-link-item">
-                <a href="index.html" class="site-footer-link">Anasayfa</a>
+                <a href="index.html" class="site-footer-link">Accueil</a>
               </li>
               <li class="site-footer-link-item">
-                <a href="index.html" class="site-footer-link">İlgili</a>
+                <a href="prog.html" class="site-footer-link">Programmation</a>
               </li>
               <li class="site-footer-link-item">
-                <a href="index.html" class="site-footer-link">Artists</a>
+                <a href="artists.html" class="site-footer-link">Artistes</a>
               </li>
               <li class="site-footer-link-item">
-                <a href="fiyatlar.html" class="site-footer-link">Fiyatları</a>
-              </li>
-              <li class="site-footer-link-item">
-                <a href="contact.html" class="site-footer-link">İletişim</a>
+                <a href="place.html" class="site-footer-link">Lieu</a>
               </li>
             </ul>
           </div>
 
           <div class="col-12 col-md-6 col-lg-3 mb-4 mb-lg-0">
-            <h5 class="site-footer-title mb-3">Bir sorunuz mu var?</h5>
-            <p class="text-white d-flex mb-1">
-              <a href="tel: 090-080-0760" class="site-footer-link">
-                050-080-0760
-              </a>
-            </p>
+            <h5 class="site-footer-title mb-3">Nous contacter ?</h5>
+           
             <p class="text-white d-flex">
-              <a href="mailto:hello@company.com" class="site-footer-link">
-                hello@company.com
+              <a href="mailto:the100festival@gmail.com" class="site-footer-link">
+                the100festival@gmail.com
               </a>
             </p>
           </div>
 
           <div class="col-12 col-md-6 col-lg-3 mb-4 mb-md-0">
-            <h5 class="site-footer-title mb-3">Konum</h5>
+            <h5 class="site-footer-title mb-3">Adresse</h5>
             <p class="text-white d-flex mt-3 mb-2">
-              Çünür Süleyman Demirel Cd. 32260 Merkez/Isparta Turkey
+              TODO
             </p>
           </div>
         </div>
@@ -239,7 +235,7 @@
           <div class="row">
             <div class="col-12 mt-5 text-center">
               <p class="copyright-text">
-                Copyright © 2023 Made by Reda El Marzouki
+                Copyright © 2023 Made by Mathieu Bolteau
               </p>
             </div>
           </div>
@@ -247,11 +243,16 @@
       </div>
     </footer>
 
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
     <script src="./script.js"></script>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB1C9rzK4hvM6l-Be60uMPmMEP9fqqMLWk&callback=initMap"
+      defer
+    ></script>
   </body>
 </html>

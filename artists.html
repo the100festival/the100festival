@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-WWT1QQMFPK"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-WWT1QQMFPK');
+  </script>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Reda El Marzouki" />
+  <meta name="keywords" content="HTML, CSS, JavaScript" />
+  <meta name="description" content="Festival Website template" />
+  <title>Festival template</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header id="nav-header">
+    <nav class="navbar index-nav navbar-expand-lg navbar-dark text-light fixed-top">
+      <div class="container">
+        <a href="./index.html" class="navbar-brand">The 100 Festival</a>
+        <a href="bilet.html" class="btn custom-btn ms-auto me-4 d-lg-none">Confirmer son billet</a>
+        <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="navbar-collapse collapse" id="navbarNav">
+          <ul class="navbar-nav align-items-lg-center ms-auto me-lg-5">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link">Accueil</a>
+            </li>
+            <li class="nav-item">
+              <a href="prog.html" class="nav-link">Programmation</a>
+            </li>
+            <li class="nav-item">
+              <a href="artists.html" class="nav-link">Artistes</a>
+            </li>
+            <li class="nav-item">
+              <a href="contact.html" class="nav-link">Lieu</a>
+            </li>
+          </ul>
+
+          <a href="billet.html" class="btn custom-btn ms-auto me-4 d-lg-block d-none">Confirmer son billet</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+
+  <section id="artists" class="artists-section">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 text-center">
+          <h2 class="mb-4"> <strong>Les Artistes</strong> </h2>
+        </div>
+
+        <div class="col-lg-5 col-12">
+          <div class="artist-thumb">
+            <div class="artist-image-wrap">
+              <img src="./assets/musician2.jpg" alt="" class="artist-image img-fluid" />
+            </div>
+            <div class="artist-hover">
+              <p>
+                <strong>Nom :</strong>
+                Elie Babin
+              </p>
+              <p>
+                <strong>Date de naissance :</strong>
+                20 Avril 1998
+              </p>
+              <p>
+                <strong>Musique :</strong>
+                Pop
+              </p>
+            </div>
+          </div>
+          <div class="artist-thumb">
+            <div class="artist-image-wrap">
+              <img src="./assets/musician3.jpg" alt="" class="artist-image img-fluid" />
+            </div>
+            <div class="artist-hover">
+              <p>
+                <strong>Nom :</strong>
+                Louise Augereau
+              </p>
+              <p>
+                <strong>Date de naissance :</strong>
+                23 Juin 1998
+              </p>
+              <p>
+                <strong>Musique :</strong>
+                Pop
+              </p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-lg-5 col-12">
+          <div class="artist-thumb">
+            <div class="artist-image-wrap">
+              <img src="./assets/musician2.jpg" alt="" class="artist-image img-fluid" />
+            </div>
+            <div class="artist-hover">
+              <p>
+                <strong>Nom :</strong>
+                Justine Baudry
+              </p>
+              <p>
+                <strong>Date de naissance :</strong>
+                18 Juin 1998
+              </p>
+              <p>
+                <strong>Musique :</strong>
+                Pop
+              </p>
+            </div>
+          </div>
+          <div class="artist-thumb">
+            <div class="artist-image-wrap">
+              <img src="./assets/mathieu.jpg" alt="" class="artist-image img-fluid" />
+            </div>
+            <div class="artist-hover">
+              <p>
+                <strong>Nom :</strong>
+                Mathieu Bolteau
+              </p>
+              <p>
+                <strong>Date de naissance :</strong>
+                14 Avril 1998
+              </p>
+              <p>
+                <strong>Musique :</strong>
+                Pop
+              </p>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <section id="festival" class="section-padding festival">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12">
+          <h2 class="mb-5 text-center">Des <strong>artistes</strong> qui se connaissent depuis des années !</h2>
+
+          <div id="carouselExampleDark" class="carousel carousel-dark slide col-lg-6 mx-auto" data-bs-ride="carousel"
+            data-aos="fade-up">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0"
+                class="festival-indicator active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"
+                class="festival-indicator"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"
+                class="festival-indicator"></button>
+              <!-- <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"
+                class="festival-indicator"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="4" aria-label="Slide 5"
+                class="festival-indicator"></button> -->
+            </div>
+
+            <div class="carousel-inner">
+              <div class="carousel-item festival-wrap active" data-bs-interval="10000">
+                <img src="./assets/carrousel1.jpg" class="d-block w-100 img-fluid" alt="...">
+                <!-- <div class="festival-info carousel-caption">
+                  <small>Website</small>
+                  <h3>
+                    <a href="#contact">
+                      <span>Dörtüncü festival</span>
+                      <i class="ri-arrow-right-s-line festival-icon"></i>
+                    </a>
+                  </h3>
+                </div> -->
+              </div>
+
+              <div class="carousel-item festival-wrap" data-bs-interval="2000">
+                <img src="./assets/carroussel2.jpg" class="d-block w-100 img-fluid" alt="...">
+                <!-- <div class="festival-info carousel-caption">
+                  <small>Website</small>
+                  <h3>
+                    <a href="#contact">
+                      <span>Dörtüncü festival</span>
+                      <i class="ri-arrow-right-s-line festival-icon"></i>
+                    </a>
+                  </h3>
+                </div>               -->
+              </div>
+
+              <div class="carousel-item festival-wrap">
+                <img src="./assets/carroussel3.jpg" class="d-block w-100 img-fluid" alt="...">
+                <!-- <div class="festival-info carousel-caption">
+                  <small>Website</small>
+                  <h3>
+                    <a href="#contact">
+                      <span>Dörtüncü festival</span>
+                      <i class="ri-arrow-right-s-line festival-icon"></i>
+                    </a>
+                  </h3>
+                </div>
+              </div> -->
+
+              <!-- <div class="carousel-item festival-wrap">
+                <img src="./assets/festival4.jpg" class="d-block w-100 img-fluid" alt="...">
+                <div class="festival-info carousel-caption">
+                  <small>Website</small>
+                  <h3>
+                    <a href="#contact">
+                      <span>Dörtüncü festival</span>
+                      <i class="ri-arrow-right-s-line festival-icon"></i>
+                    </a>
+                  </h3>
+                </div>
+              </div>
+
+              <div class="carousel-item festival-wrap">
+                <img src="./assets/festival5.jpg" class="d-block w-100 img-fluid" alt="...">
+                <div class="festival-info carousel-caption">
+                  <small>Website</small>
+                  <h3>
+                    <a href="#contact">
+                      <span>Beşinci festival</span>
+                      <i class="ri-arrow-right-s-line festival-icon"></i>
+                    </a>
+                  </h3>
+                </div>
+              </div> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <!-- <main>
+      <section id="fiyatlar" class="fiyatlar-section">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-lg-8 mx-auto">
+              <h2 class="text-center mb-4">Plans, you' love</h2>
+            </div>
+
+            <div class="col-12 col-lg-6">
+              <div class="fiyatlar-thumb">
+                <div class="d-flex">
+                  <div>
+                    <h3>
+                      <small>Early Bird</small>
+                      $120
+                    </h3>
+                    <p>İyi şeyler dahil:</p>
+                  </div>
+                  <p class="fiyatlar-tag ms-auto">
+                    <span>%50'ye</span>
+                    varan tasarruf
+                  </p>
+                </div>
+                <ul class="fiyatlar-list mt-3">
+                  <li class="fiyatlar-list-item">
+                    potansiyel müşteriler için platform
+                  </li>
+                  <li class="fiyatlar-list-item">dijital deneyim</li>
+                  <li class="fiyatlar-list-item">yüksek kaliteli ses</li>
+                  <li class="fiyatlar-list-item">standart içerik</li>
+                </ul>
+                <a href="#contact" class="link-fx-1 mt-4">
+                  <span>Bilet Al</span>
+                  <i class="ri-arrow-right-s-line icon"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="col-12 col-lg-6 mt-4 mt-lg-0">
+              <div class="fiyatlar-thumb">
+                <div class="d-flex">
+                  <div>
+                    <h3>
+                      <small>Standart</small>
+                      $240
+                    </h3>
+                    <p>Birinci sınıf bir festava yapan nedir?</p>
+                  </div>
+                </div>
+                <ul class="fiyatlar-list mt-3">
+                  <li class="fiyatlar-list-item">
+                    potansiyel müşteriler için platform
+                  </li>
+                  <li class="fiyatlar-list-item">dijital deneyim</li>
+                  <li class="fiyatlar-list-item">yüksek kaliteli ses</li>
+                  <li class="fiyatlar-list-item">standart içerik</li>
+                </ul>
+                <a href="#contact" class="link-fx-1 mt-4">
+                  <span>Bilet Al</span>
+                  <i class="ri-arrow-right-s-line icon"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main> -->
+
+    
+    <footer class="site-footer">
+      <div class="site-footer-top">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-lg-6">
+              <h2 class="mb-lg-0 text-white">The 100 Festival</h2>
+            </div>
+            <div
+              class="col-12 col-lg-6 d-flex justify-content-lg-end align-items-center"
+            >
+              <ul class="social-icon d-flex justify-content-lg-end">
+                <li class="social-icon-item">
+                  <a href="#" class="social-icon-link">
+                    <i class="ri-facebook-circle-fill"></i>
+                  </a>
+                </li>
+                <li class="social-icon-item">
+                  <a href="#" class="social-icon-link">
+                    <i class="ri-twitter-fill"></i>
+                  </a>
+                </li>
+                <li class="social-icon-item">
+                  <a href="#" class="social-icon-link">
+                    <i class="ri-instagram-line"></i>
+                  </a>
+                </li>
+                <li class="social-icon-item">
+                  <a href="#" class="social-icon-link">
+                    <i class="ri-youtube-fill"></i>
+                  </a>
+                </li>
+                <li class="social-icon-item">
+                  <a href="#" class="social-icon-link">
+                    <i class="ri-pinterest-fill"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-lg-6 mb-4 pb-2">
+            <h5 class="site-footer-title mb-3">Plan du site</h5>
+            <ul class="site-footer-links">
+              <li class="site-footer-link-item">
+                <a href="index.html" class="site-footer-link">Accueil</a>
+              </li>
+              <li class="site-footer-link-item">
+                <a href="prog.html" class="site-footer-link">Programmation</a>
+              </li>
+              <li class="site-footer-link-item">
+                <a href="artists.html" class="site-footer-link">Artistes</a>
+              </li>
+              <li class="site-footer-link-item">
+                <a href="place.html" class="site-footer-link">Lieu</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-3 mb-4 mb-lg-0">
+            <h5 class="site-footer-title mb-3">Nous contacter ?</h5>
+           
+            <p class="text-white d-flex">
+              <a href="mailto:the100festival@gmail.com" class="site-footer-link">
+                the100festival@gmail.com
+              </a>
+            </p>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-3 mb-4 mb-md-0">
+            <h5 class="site-footer-title mb-3">Adresse</h5>
+            <p class="text-white d-flex mt-3 mb-2">
+              TODO
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="site-footer-bottom">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 mt-5 text-center">
+              <p class="copyright-text">
+                Copyright © 2023 Made by Mathieu Bolteau
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  <script src="./script.js" defer></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+</body>
+
+</html>
