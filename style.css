@@ -500,12 +500,36 @@ p {
   background-position: center;
   background-size: cover;
 }
-.takvim-table .pop-img {
-  background-image: url(./assets/musician1.jpg);
+.takvim-table .ouverture1-img {
+  background-image: url(./assets/ouverture1.jpeg);
   position: relative;
 }
-.takvim-table .rock-img {
-  background-image: url(./assets/rockband.jpg);
+.takvim-table .ouverture2-img {
+  background-image: url(./assets/ouverture2.jpg);
+  position: relative;
+}
+.takvim-table .aperitif-img {
+  background-image: url(./assets/aperitif.jpg);
+  position: relative;
+}
+.takvim-table .repas-midi-img {
+  background-image: url(./assets/repas-midi.jpg);
+  position: relative;
+}
+.takvim-table .dessert-img {
+  background-image: url(./assets/dessert.jpg);
+  position: relative;
+}
+.takvim-table .happy-hour-img {
+  background-image: url(./assets/happy-hour.jpg);
+}
+.takvim-table .aperitif2-img {
+  background-image: url(./assets/aperitif2.jpg);
+  position: relative;
+}
+.takvim-table .jeux-img {
+  background-image: url(./assets/jeux.jpg);
+  position: relative;
 }
 .takvim-table .dj-img {
   background-image: url(./assets/djImage.jpg);
