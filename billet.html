@@ -91,19 +91,24 @@
                             <h2 class="text-center mb-4">Confimer votre venue</h2>
                             <div class="bilet-form-body">
                                 <div class="row">
+
+                                  <h6>Identité</h6>
                                     <div class="col-lg-6 col-md-6 col-12">
-                                        <input type="text" name="NOM" id="NOM" class="form-control" placeholder="Nom" required="">
+                                        <input type="text" name="NOM" id="NOM" class="form-control" placeholder="Nom" required="True">
                                     </div>
                                     <div class="col-lg-6 col-md-6 col-12">
-                                      <input type="text" name="Prenom" id="Prenom" class="form-control" placeholder="Préom" required="">
+                                      <input type="text" name="Prenom" id="Prenom" class="form-control" placeholder="Préom" required="True">
                                   </div>
                                     
                                 </div>
                                   <input type="email" name="Email" id="Email" pattern="[^ @]*@[^ @]*" class="form-control" placeholder="Adresse mail" required="">
                               
                                 <!-- <input type="tel" class="form-control" name="bilet-form-phone" placeholder="Tr 055-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required=""> -->
-
-                                <h6>On peut compter sur moi ?</h6>
+                                <h6>Numéro de billet</h6>
+                                    <div class="col-lg-6 col-md-6 col-12">
+                                        <input type="text" name="num_billet" id="num_billet" class="form-control" placeholder="Numéro de billet" required="True">
+                                    </div>
+                                <h6>Présent·e ?</h6>
 
                                 <div class="row">
                                     <div class="col-lg-6 col-md-6 col-12">
@@ -124,10 +129,7 @@
                                     </div>
                                 </div>
 
-                                <h6>Nombre de personnes</h6>
-                                <input type="number" name="NombrePersonne" id="NombrePersonne" class="form-control" placeholder="Nombre de personnes" required="">
-
-                                <textarea name="COmmentaire" rows="3" class="form-control" id="COmmentaire" placeholder="Commentaire"></textarea>
+                                <textarea name="Commentaire" rows="3" class="form-control" id="Commentaire" placeholder="Commentaire"></textarea>
                                 <input type="hidden" name="redirect" value="https://the100festival.github.io/confirmation.html">
                                 <div class="col-lg-4 col-md-10 col-8 mx-auto">
                                     <button type="submit" class="form-control">Valider</button>
