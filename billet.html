@@ -1,255 +1,313 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-WWT1QQMFPK"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
 
-      gtag('config', 'G-WWT1QQMFPK');
-    </script>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="author" content="Reda El Marzouki" />
-    <meta name="keywords" content="HTML, CSS, JavaScript" />
-    <meta name="description" content="Festival Website template" />
-    <title>The 100 Festival</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    
-    <header id="nav-header">
-      <nav class="navbar index-nav navbar-expand-lg navbar-dark text-light fixed-top">
-        <div class="container">
-          <a href="./index.html" class="navbar-brand">The 100 Festival</a>
-          <a href="billet.html" class="btn custom-btn ms-auto me-4 d-lg-none"
-            >Confirmer son billet</a
-          >
-          <button
-            class="navbar-toggler collapsed"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-WWT1QQMFPK"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-          <div class="navbar-collapse collapse" id="navbarNav">
-            <ul class="navbar-nav align-items-lg-center ms-auto me-lg-5">
-              <li class="nav-item">
-                <a href="index.html" class="nav-link">Accueil</a>
-              </li>
-              <li class="nav-item">
-                <a href="prog.html" class="nav-link">Programmation</a>
-              </li>
-              <li class="nav-item">
-                <a href="artists.html" class="nav-link">Artistes</a>
-              </li>
-              <li class="nav-item">
-                <a href="place.html" class="nav-link">Lieu</a>
-              </li>
-            </ul>
-            
-            <a
-              href="billet.html"
-              class="btn custom-btn ms-auto me-4 d-lg-block d-none"
-              >Confirmer son billet</a
-            >
-          </div>
-        </div>
-      </nav>
-    </header>
+    gtag('config', 'G-WWT1QQMFPK');
+  </script>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Reda El Marzouki" />
+  <meta name="keywords" content="HTML, CSS, JavaScript" />
+  <meta name="description" content="Festival Website template" />
+  <title>The 100 Festival</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
 
-    
-    <main>
-        <section class="bilet-section">
-            <div class="section-overlay"></div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-10 col-lg-6 mx-auto">
-                      <form action="https://api.web3forms.com/submit" method="POST" class="custom-form bilet-form mb-5 mb-lg-0">
+</head>
 
-                        
-                          <input type="hidden" name="access_key" value="aabdced8-8455-4a36-8821-6b008c64cdf0">
-                      
-                            <h2 class="text-center mb-4">Confimer votre venue</h2>
-                            <div class="bilet-form-body">
-                                <div class="row">
+<body>
 
-                                  <h6>Identité</h6>
-                                    <div class="col-lg-6 col-md-6 col-12">
-                                        <input type="text" name="NOM" id="NOM" class="form-control" placeholder="Nom" required="True">
-                                    </div>
-                                    <div class="col-lg-6 col-md-6 col-12">
-                                      <input type="text" name="Prenom" id="Prenom" class="form-control" placeholder="Préom" required="True">
-                                  </div>
-                                    
-                                </div>
-                                  <input type="email" name="Email" id="Email" pattern="[^ @]*@[^ @]*" class="form-control" placeholder="Adresse mail" required="">
-                              
-                                <!-- <input type="tel" class="form-control" name="bilet-form-phone" placeholder="Tr 055-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required=""> -->
-                                <h6>Numéro de billet</h6>
-                                    <div class="col-lg-6 col-md-6 col-12">
-                                        <input type="text" name="num_billet" id="num_billet" class="form-control" placeholder="Numéro de billet" required="True">
-                                    </div>
-                                <h6>Présent·e ?</h6>
+ 
 
-                                <div class="row">
-                                    <div class="col-lg-6 col-md-6 col-12">
-                                        <div class="form-check form-control">
-                                            <input class="form-check-input" type="radio" name="Presence" value="Oui" id="flexRadioDefault1">
-                                            <label class="form-check-label" for="flexRadioDefault1">
-                                                Oui
-                                            </label>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6 col-md-6 col-12">
-                                        <div class="form-check form-check-radio form-control">
-                                            <input class="form-check-input" type="radio" name="Presence" value="Non" id="flexRadioDefault2">
-                                            <label class="form-check-label" for="flexRadioDefault2">
-                                                Non
-                                            </label>
-                                        </div>
-                                    </div>
-                                </div>
+  <header id="nav-header">
+    <nav class="navbar index-nav navbar-expand-lg navbar-dark text-light fixed-top">
+      <div class="container">
+        <a href="./index.html" class="navbar-brand">The 100 Festival</a>
+        <a href="billet.html" class="btn custom-btn ms-auto me-4 d-lg-none">Confirmer son billet</a>
+        <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-                                <textarea name="Commentaire" rows="3" class="form-control" id="Commentaire" placeholder="Commentaire"></textarea>
-                                <input type="hidden" name="redirect" value="https://the100festival.github.io/confirmation.html">
-                                <div class="col-lg-4 col-md-10 col-8 mx-auto">
-                                    <button type="submit" class="form-control">Valider</button>
-                                </div>
-                            </div>
-                            <!-- <input type="hidden" name="slap_redirect" value="{{site.url}}{{site.slapform_thankyou_page}}" /> slap_redirect allows you to set a custom redirect/thank you page -->
-    
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
+        <div class="navbar-collapse collapse" id="navbarNav">
+          <ul class="navbar-nav align-items-lg-center ms-auto me-lg-5">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link">Accueil</a>
+            </li>
+            <li class="nav-item">
+              <a href="prog.html" class="nav-link">Programmation</a>
+            </li>
+            <li class="nav-item">
+              <a href="artists.html" class="nav-link">Artistes</a>
+            </li>
+            <li class="nav-item">
+              <a href="place.html" class="nav-link">Lieu</a>
+            </li>
+          </ul>
 
-    
-    
-    <footer class="site-footer">
-      <div class="site-footer-top">
-        <div class="container">
-          <div class="row">
-            <div class="col-12 col-lg-6">
-              <h2 class="mb-lg-0 text-white">The 100 Festival</h2>
-            </div>
-            <div
-              class="col-12 col-lg-6 d-flex justify-content-lg-end align-items-center"
-            >
-              <ul class="social-icon d-flex justify-content-lg-end">
-                <li class="social-icon-item">
-                  <a href="#" class="social-icon-link">
-                    <i class="ri-facebook-circle-fill"></i>
-                  </a>
-                </li>
-                <li class="social-icon-item">
-                  <a href="#" class="social-icon-link">
-                    <i class="ri-twitter-fill"></i>
-                  </a>
-                </li>
-                <li class="social-icon-item">
-                  <a href="#" class="social-icon-link">
-                    <i class="ri-instagram-line"></i>
-                  </a>
-                </li>
-                <li class="social-icon-item">
-                  <a href="#" class="social-icon-link">
-                    <i class="ri-youtube-fill"></i>
-                  </a>
-                </li>
-                <li class="social-icon-item">
-                  <a href="#" class="social-icon-link">
-                    <i class="ri-pinterest-fill"></i>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
+          <a href="billet.html" class="btn custom-btn ms-auto me-4 d-lg-block d-none">Confirmer son billet</a>
         </div>
       </div>
+    </nav>
+  </header>
 
+
+  <main>
+    <section class="bilet-section">
+      <div class="section-overlay"></div>
       <div class="container">
         <div class="row">
-          <div class="col-12 col-lg-6 mb-4 pb-2">
-            <h5 class="site-footer-title mb-3">Plan du site</h5>
-            <ul class="site-footer-links">
-              <li class="site-footer-link-item">
-                <a href="index.html" class="site-footer-link">Accueil</a>
+          <div class="col-10 col-lg-6 mx-auto">
+            <form action="https://api.web3forms.com/submit" method="POST" class="custom-form bilet-form mb-5 mb-lg-0">
+
+
+              <input type="hidden" name="access_key" value="aabdced8-8455-4a36-8821-6b008c64cdf0">
+
+              <h2 class="text-center mb-4">Confimer votre venue</h2>
+              <div class="bilet-form-body">
+                <div class="row">
+
+                  <h6>Identité</h6>
+                  <div class="col-lg-6 col-md-6 col-12">
+                    <input type="text" name="NOM" id="NOM" class="form-control" placeholder="Nom*" required="True">
+                  </div>
+                  <div class="col-lg-6 col-md-6 col-12">
+                    <input type="text" name="Prenom" id="Prenom" class="form-control" placeholder="Prénom*"
+                      required="True">
+                  </div>
+
+                </div>
+                <input type="email" name="Email" id="Email" pattern="[^ @]*@[^ @]*" class="form-control"
+                  placeholder="Adresse mail">
+
+                <!-- <input type="tel" class="form-control" name="bilet-form-phone" placeholder="Tr 055-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required=""> -->
+
+
+
+                <h6>Présent·e*</h6>
+
+                <div class="row" id="Presence">
+                  <div class="col-lg-6 col-md-6 col-12">
+                    <div class="form-check form-check-radio form-control">
+                      <input class="form-check-input" type="radio" name="Presence" value="Oui" id="PresenceOui">
+                      <label class="form-check-label" for="PresenceOui">
+                        Oui
+                      </label>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-6 col-12">
+                    <div class="form-check form-check-radio form-control">
+                      <input class="form-check-input" type="radio" name="Presence" value="Non" id="PresenceNon" checked>
+                      <label class="form-check-label" for="PresenceNon">
+                        Non
+                      </label>
+                    </div>
+                  </div>
+                </div>
+
+                <div id="pass-div" style="display: none;">
+                  <h6>Pass*</h6>
+                  <div class="row">
+                    <div class="col-lg-6 col-md-6 col-12">
+                      <div class="form-check form-check-radio form-control">
+                        <input class="form-check-input" type="radio" name="Pass" value="PASS 1 JOUR" id="pass1jour">
+                        <label class="form-check-label" for="pass1jour">
+                          PASS 1 JOUR
+                        </label>
+                      </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-12">
+                      <div class="form-check form-check-radio form-control">
+                        <input class="form-check-input" type="radio" name="Pass" value="PASS 1 SOIRÉE" id="pass1soiree" checked="checked">
+                        <label class="form-check-label" for="pass1soiree">
+                          PASS 1 SOIRÉE
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+
+                <div id="1jour-div" style="display: none;">
+                  <h6>Je serais là le</h6>
+                  <div class="row">
+                    <div class="col-lg-6 col-md-6 col-12">
+                      <div class="form-check form-control">
+                        <input class="form-check-input" type="checkbox" name="Pass" value="Midi" id="midi">
+                        <label class="form-check-label" for="midi">
+                          Midi
+                        </label>
+                      </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-12">
+                      <div class="form-check form-check-radio form-control">
+                        <input class="form-check-input" type="checkbox" name="Pass" value="Soir" id="soir">
+                        <label class="form-check-label" for="soir">
+                          Soir
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+
+
+                <textarea name="Commentaire" rows="3" class="form-control" id="Commentaire"
+                  placeholder="Commentaire"></textarea>
+                <input type="hidden" name="redirect" value="https://the100festival.github.io/confirmation.html">
+                <div class="col-lg-4 col-md-10 col-8 mx-auto">
+                  <button type="submit" class="form-control">Valider</button>
+                </div>
+              </div>
+              <!-- <input type="hidden" name="slap_redirect" value="{{site.url}}{{site.slapform_thankyou_page}}" /> slap_redirect allows you to set a custom redirect/thank you page -->
+
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      const presenceOui = document.getElementById("PresenceOui");
+      const passDiv = document.getElementById("pass-div");
+      const pass1jour = document.getElementById("pass1jour");
+      const JourDiv = document.getElementById("1jour-div");
+      presenceOui.addEventListener("change", function() {
+        if (presenceOui.checked) {
+          passDiv.style.display = "block";
+        } else {
+          passDiv.style.display = "none";
+        }
+      });
+      pass1jour.addEventListener("change", function() {
+        if (pass1jour.checked) {
+          JourDiv.style.display = "block";
+        } else {
+          JourDiv.style.display = "none";
+        }
+      });
+      
+    </script>
+    
+  </main>
+
+
+
+  <footer class="site-footer">
+    <div class="site-footer-top">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-lg-6">
+            <h2 class="mb-lg-0 text-white">The 100 Festival</h2>
+          </div>
+          <!-- <div
+            class="col-12 col-lg-6 d-flex justify-content-lg-end align-items-center"
+          >
+            <ul class="social-icon d-flex justify-content-lg-end">
+              <li class="social-icon-item">
+                <a href="#" class="social-icon-link">
+                  <i class="ri-facebook-circle-fill"></i>
+                </a>
               </li>
-              <li class="site-footer-link-item">
-                <a href="prog.html" class="site-footer-link">Programmation</a>
+              <li class="social-icon-item">
+                <a href="#" class="social-icon-link">
+                  <i class="ri-twitter-fill"></i>
+                </a>
               </li>
-              <li class="site-footer-link-item">
-                <a href="artists.html" class="site-footer-link">Artistes</a>
+              <li class="social-icon-item">
+                <a href="#" class="social-icon-link">
+                  <i class="ri-instagram-line"></i>
+                </a>
               </li>
-              <li class="site-footer-link-item">
-                <a href="place.html" class="site-footer-link">Lieu</a>
+              <li class="social-icon-item">
+                <a href="#" class="social-icon-link">
+                  <i class="ri-youtube-fill"></i>
+                </a>
+              </li>
+              <li class="social-icon-item">
+                <a href="#" class="social-icon-link">
+                  <i class="ri-pinterest-fill"></i>
+                </a>
               </li>
             </ul>
-          </div>
+          </div> -->
+        </div>
+      </div>
+    </div>
 
-          <div class="col-12 col-md-6 col-lg-3 mb-4 mb-lg-0">
-            <h5 class="site-footer-title mb-3">Nous contacter ?</h5>
-           
-            <p class="text-white d-flex">
-              <a href="mailto:the100festival@gmail.com" class="site-footer-link">
-                the100festival@gmail.com
-              </a>
-            </p>
-          </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-lg-6 mb-4 pb-2">
+          <h5 class="site-footer-title mb-3">Plan du site</h5>
+          <ul class="site-footer-links">
+            <li class="site-footer-link-item">
+              <a href="index.html" class="site-footer-link">Accueil</a>
+            </li>
+            <li class="site-footer-link-item">
+              <a href="prog.html" class="site-footer-link">Programmation</a>
+            </li>
+            <li class="site-footer-link-item">
+              <a href="artists.html" class="site-footer-link">Artistes</a>
+            </li>
+            <li class="site-footer-link-item">
+              <a href="place.html" class="site-footer-link">Lieu</a>
+            </li>
+          </ul>
+        </div>
 
-          <div class="col-12 col-md-6 col-lg-3 mb-4 mb-md-0">
-            <h5 class="site-footer-title mb-3">Adresse</h5>
-            <p class="text-white d-flex mt-3 mb-2">
-              TODO
+        <div class="col-12 col-md-6 col-lg-3 mb-4 mb-lg-0">
+          <h5 class="site-footer-title mb-3">Nous contacter</h5>
+         
+          <p class="text-white d-flex">
+            <a href="mailto:the100festival@gmail.com" class="site-footer-link">
+              the100festival@gmail.com
+            </a>
+          </p>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-3 mb-4 mb-md-0">
+          <h5 class="site-footer-title mb-3">Adresse</h5>
+          <p class="text-white d-flex mt-3 mb-2">
+            Circuit du Bouvreau <br>
+            85600 St Georges de Montaigu
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="site-footer-bottom">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 mt-5 text-center">
+            <p class="copyright-text">
+              Copyright © 2023 Made by <a href="https://mathieubolteau.xyz/">Mathieu Bolteau</a>
             </p>
           </div>
         </div>
       </div>
-
-      <div class="site-footer-bottom">
-        <div class="container">
-          <div class="row">
-            <div class="col-12 mt-5 text-center">
-              <p class="copyright-text">
-                Copyright © 2023 Made by <a href="https://mathieubolteau.xyz/">Mathieu Bolteau</a>
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
+    </div>
+  </footer>
 
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-      crossorigin="anonymous"
-    ></script>
-    <script src="./script.js"></script>
-    <script
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB1C9rzK4hvM6l-Be60uMPmMEP9fqqMLWk&callback=initMap"
-      defer
-    ></script>
-  </body>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script src="./script.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB1C9rzK4hvM6l-Be60uMPmMEP9fqqMLWk&callback=initMap"
+    defer></script>
+
+
+</body>
+
 </html>
